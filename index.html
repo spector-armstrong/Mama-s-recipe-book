@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поваренная книга для зверят<title>
+    <link rel="icon" href="img/cooking-book.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1 id="title">Поваренная книга для зверят</h1>
+            <div id="navbar">
+                <a class="nav-title" id="breakfast" href="#breakfast">Завтраки</a>
+                <a class="nav-title" id="main-course" href="#main-course">Основные блюда</a>
+                <a class="nav-title" id="snack" href="#snack">Перекус</a>
+                <a class="nav-title" id="dessert" href="#dessert">Десерты</a>
+                <button id="add-recipe-btn">Добавить рецепт</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="breakfast">
+            <h2 class="section-head">Завтраки</h2>
+            <table>
+                <tr>
+                    <th>Название</th>
+                    <th>Ссылка</th>
+                    <th>Теги</th>
+                </tr>
+                <tr>
+                    <td>Пример</td>
+                    <td>Пример</td>
+                    <td>Пример</td>
+                </tr>
+
+            </table>
+        </section>
+        <section id="main-course">
+            <h2 class="section-head">Основные блюда</h2>
+            <table>
+                <tr>
+                    <th>Название</th>
+                    <th>Ссылка</th>
+                    <th>Теги</th>
+                </tr>
+                <tr>
+                    <td>Пример</td>
+                    <td>Пример</td>
+                    <td>Пример</td>
+                </tr>
+
+            </table>
+        </section>
+        <section id="snack">
+            <h2 class="section-head">Перекурс</h2>
+            <table>
+                <tr>
+                    <th>Название</th>
+                    <th>Ссылка</th>
+                    <th>Теги</th>
+                </tr>
+                <tr>
+                    <td>Пример</td>
+                    <td>Пример</td>
+                    <td>Пример</td>
+                </tr>
+
+            </table>
+        </section>
+        <section id="dessert">
+            <h2 class="section-head">Десерты</h2>
+            <table>
+                <tr>
+                    <th>Название</th>
+                    <th>Ссылка</th>
+                    <th>Теги</th>
+                </tr>
+                <tr>
+                    <td>Пример</td>
+                    <td>Пример</td>
+                    <td>Пример</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <div id="modal-backdrop">
+        <div id="add-recipe-modal">
+            <div id="modal-header">
+                <button id="close-modal">&times;</button>
+                <h3 id="modal-heading">Добавить рецепт</h3>
+            </div>
+            <div id="modal-input">
+                <label for="dish-name">Название</label>
+                <input type="text" id="dish-name" required />
+                <label for="dish-link">Ссылка</label>
+                <input type="text" id="dish-link" required />
+                <label for="meal-type">Прием пищи</label>
+                <select name="meal-type" id="meal-type-select">
+                    <option value="">Прием пищи</option>
+                    <option value="breakfast">Завтрак</option>
+                    <option value="main">Основное блюдо</option>
+                    <option value="snack">Перекус</option>
+                    <option value="dessert">Десерт</option>
+                </select>
+            </div>
+            <button id="submit-modal" href="dashboard.html">Next step →</button>
+        </div>
+    </div>
+    <script href="script.js"></script>
+</body>
+</html>
